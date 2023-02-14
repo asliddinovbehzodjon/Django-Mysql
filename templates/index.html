@@ -9,6 +9,11 @@
 <body>
 <center>
     <h1>Salom,Bu videoda Django va Mysqlni bog'laymiz!</h1>
+    <h2>Posts</h2>
+    {% for post in posts %}
+    <p>Title : {{post.title}}</p>
+    <p>Description: {{post.description}}</p>
+    {% endfor %}
 </center>
 </body>
 </html>
