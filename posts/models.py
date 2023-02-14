@@ -6,3 +6,5 @@ class Post(models.Model):
     description = models.TextField(verbose_name='Post Description',help_text='Enter post description')
     def __str__(self):
         return self.title
+    class Meta:
+        db_table ='Maqolalar'
